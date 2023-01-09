@@ -155,3 +155,13 @@ print(my_fruits) #['blueberry', 'apple', 'cherry', 'orange', 'mike', 'reza', 'al
 # exclude name of fruits from persons
 with_out_fruits = [x for x in my_fruits if x not in awesome_fruits]
 print(with_out_fruits)  #['mike', 'reza', 'ali', 'john', 'mitra', 'helen']
+
+
+# merging lists
+num_list1 = [1,2,3,4,5]
+num_list_2 = [6,7,8,9,10]
+print(*num_list1, *num_list_2, sep=',') # 1,2,3,4,5,6,7,8,9,10
+
+#into new list
+new_list = [*num_list1, *num_list_2]
+print(new_list) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
