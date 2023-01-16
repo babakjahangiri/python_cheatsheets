@@ -165,3 +165,13 @@ print(*num_list1, *num_list_2, sep=',') # 1,2,3,4,5,6,7,8,9,10
 #into new list
 new_list = [*num_list1, *num_list_2]
 print(new_list) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+
+todo_list = ["programming", "eat", "sleep","repeat"]
+
+obj1 = enumerate(todo_list)
+print(obj1) # <enumerate object at 0x7fb0330a52c0>
+
+# changing start index to 2 from 0
+print (list(enumerate(todo_list, 2))) # [(2, 'programming'), (3, 'eat'), (4, 'sleep'), (5, 'repeat')]
